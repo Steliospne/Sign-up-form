@@ -1,0 +1,94 @@
+
+
+@font-face {
+    font-family: "main";
+    src: url(assets/Norse-Bold.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: url;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    font: 1rem sans-serif;
+}
+
+label {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.sign-up-page{
+    display: flex;
+    min-height: 100vh;
+}
+
+.hero {
+    background-image: url(assets/hero-image.jpg);
+    background-size: cover;
+    display: flex;
+    flex: 0.35;
+}
+
+.form-wrapper,
+.form-header,
+.form,
+.col-row {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-wrapper {
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.form-header {
+    flex: 0.4;
+}
+
+.form {
+    flex: 0.25
+}
+
+.submit {
+    display: flex;
+    flex: 0.35;
+}
+
+.submit-btn {
+    display: flex;
+    width: 100%;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-row {
+    margin: 20px 0;
+}
+
+@media only screen and (min-width: 900px) {
+    
+    .sign-up-page{
+        display: flex;
+        width: 60%;
+        height: fit-content;
+    }
+
+    .form-wrapper {
+
+    }
+
+    .col-row {
+        margin-right: 40px
+    }
+}
