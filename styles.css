@@ -14,6 +14,7 @@ body {
     padding: 0;
     margin: 0;
     font: 1rem sans-serif;
+    height: 100vh;
 }
 
 label {
@@ -26,6 +27,7 @@ label {
 .sign-up-page{
     display: flex;
     min-height: 100vh;
+    max-width: 450px;
 }
 
 .hero {
@@ -46,7 +48,6 @@ label {
 
 .form-wrapper {
     flex: 1;
-    flex-wrap: wrap;
 }
 
 .form-header {
@@ -67,6 +68,10 @@ label {
     width: 100%;
 }
 
+.submit-btn button {
+    height: fit-content;
+}
+
 .form-row {
     display: flex;
     flex-wrap: wrap;
@@ -76,16 +81,25 @@ label {
     margin: 20px 0;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 600px) {
+
+    body {
+        align-items: center;
+    }
     
     .sign-up-page{
         display: flex;
         width: 60%;
-        height: fit-content;
+        max-width: 850px;
+        min-height: 700px;
     }
 
-    .form-wrapper {
+    .hero {
+        min-width: 140px;
+    }
 
+    .form-row {
+        flex-wrap: nowrap;
     }
 
     .col-row {
