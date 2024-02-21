@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: "main";
     src: url(assets/Norse-Bold.otf);
@@ -7,34 +5,61 @@
     font-style: normal;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: url;
     display: flex;
     justify-content: center;
     padding: 0;
     margin: 0;
     font: 1rem sans-serif;
     height: 100vh;
+    background-color: black;
 }
 
 label {
     box-sizing: border-box;
     display: inline-block;
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
 }
 
-.sign-up-page{
+.sign-up-page {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     max-width: 450px;
+    background-image: url(assets/hero-image.jpg);
+    background-size: cover;
 }
 
 .hero {
-    background-image: url(assets/hero-image.jpg);
-    background-size: cover;
+    width: 100%;
+}
+
+.logo-wrapper {
     display: flex;
-    flex: 0.35;
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 100%;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    color: white;
+    font: 4rem "main";
+    height: fit-content;
+    align-items: center;
+}
+
+.logo img {
+    width: 75px;
 }
 
 .form-wrapper,
@@ -43,19 +68,39 @@ label {
 .col-row {
     display: flex;
     flex-direction: column;
-
-}
-
-.form-wrapper {
-    flex: 1;
 }
 
 .form-header {
     flex: 0.4;
+    padding: 20px;
 }
 
 .form {
-    flex: 0.25
+    flex: 0.25;
+    background-color: rgba(0, 0, 0, 0.39);
+    color: white;
+}
+
+.form-header>div>p {
+
+    font-size: 1.2rem;
+    color: white;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.form-row input {
+    border: solid 1px rgb(197, 196, 196);
+    border-radius: 3px;
+    
+}
+
+.col-row {
+    margin: 20px 0;
 }
 
 .submit {
@@ -70,15 +115,19 @@ label {
 
 .submit-btn button {
     height: fit-content;
+    background-color: #596d48;
+    height: 40px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: black 0 0 10px;
 }
 
-.form-row {
-    display: flex;
-    flex-wrap: wrap;
+.submit-btn button:hover {
+    background-color: #4b5c3c;
 }
 
-.col-row {
-    margin: 20px 0;
+.submit-btn button:active {
+    border: solid 1px rgb(0, 0, 0);
 }
 
 @media only screen and (min-width: 600px) {
@@ -86,23 +135,72 @@ label {
     body {
         align-items: center;
     }
-    
-    .sign-up-page{
+
+    .sign-up-page {
+        flex-direction: row;
+        align-items: normal;
         display: flex;
-        width: 60%;
-        max-width: 850px;
-        min-height: 700px;
+        width: 100%;
+        max-width: 1440px;
+        min-height: 1024px;
+        background-image: none;
     }
 
     .hero {
+        background-image: url(assets/hero-image.jpg);
+        background-size: cover;
+        display: flex;
+        flex: 0.35;
         min-width: 140px;
+        position: relative;
+    }
+    
+    .logo-wrapper {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 150px;
+        background-color: rgba(0, 0, 0, 0.39);
+        width: 100%;
+        height: fit-content;
+    }
+
+    .form-wrapper {
+        flex: 0.65;
+    }
+
+    .form-header {
+        position: relative;
+    }
+
+    .form-header>div {
+        position: absolute;
+        top: 150px;
+    }
+
+    .form-header>div>p {
+        padding: 20px;
+        font-size: 1.5rem;
+        color: black;
+        max-width: 51ch;
+    }
+
+    .form-header,
+    .submit {
+        background-color: #f9fafb;
+    }
+
+    .form {
+        color: unset;
+        background-color: white;
     }
 
     .form-row {
         flex-wrap: nowrap;
+        justify-content: normal;
     }
-
+    
     .col-row {
-        margin-right: 40px
+        padding-left: 20px;
     }
 }
