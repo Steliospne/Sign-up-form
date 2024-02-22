@@ -19,55 +19,67 @@
 
         <div class="form-wrapper">
             <div class="form-header">
-                <div>
+                <div class="form-par">
                     <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
                     <p>You <i>know</i> you want to.</p>
                 </div>
             </div>
+
             <div class="form">
+
+                <div class="legend">
+                    <p>Let's do this!</p>
+                </div>
+
                 <form action="#" method="get">
+
                     <div class="form-row">
                         <div class="col-row">
                             <label for="first_name" >FIRST NAME</label>
-                            <input type="text" name="first_name" id="first_name">
+                            <input type="text" name="first_name" id="first_name" required>
                         </div>
 
                         <div class="col-row">
                             <label for="last_name" >LAST NAME</label>
-                            <input type="text" name="last_name" id="last_name">
+                            <input type="text" name="last_name" id="last_name" required>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="col-row">
                             <label for="email" >EMAIL</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
 
                         <div class="col-row">
-                            <label for="phone" >FIRST NAME</label>
-                            <input type="tel" name="phone" id="phone">
+                            <label for="phone" >PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone" required>
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="col-row">
                             <label for="pwd" >PASSWORD</label>
-                            <input type="password" name="pwd" id="pwd">
+                            <input type="password" class="error" name="pwd" id="pwd" required>
                         </div>
 
                         <div class="col-row">
                             <label for="conf-pwd" >CONFIRM PASSWORD</label>
-                            <input type="password" name="conf-pwd" id="conf-pwd">
+                            <input type="password" class="error" name="conf-pwd" id="conf-pwd" required>
                         </div>
                     </div>
                     
                 </div>
 
                 <div class="submit">
+
                     <div class="submit-btn">
                         <button type="submit">Create Account</button>
                     </div>
+
+                    <p>
+                        Already have an acount? <span>Log in</span>
+                    </p>
                 </div>
             </form>
         </div>
