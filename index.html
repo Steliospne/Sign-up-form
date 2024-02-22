@@ -60,12 +60,14 @@
                     <div class="form-row">
                         <div class="col-row">
                             <label for="pwd" >PASSWORD</label>
-                            <input type="password" class="error" name="pwd" id="pwd" required>
+                            <input type="password" name="pwd" id="pwd" required>
+                            <span class="errorMsg" aria-live="polite"></span>
                         </div>
 
                         <div class="col-row">
                             <label for="conf-pwd" >CONFIRM PASSWORD</label>
-                            <input type="password" class="error" name="conf-pwd" id="conf-pwd" required>
+                            <input type="password" name="conf-pwd" id="conf-pwd" required>
+                            <span class="errorMsg" aria-live="polite"></span>
                         </div>
                     </div>
                     
@@ -85,5 +87,6 @@
         </div>
         
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
