@@ -28,9 +28,17 @@ label {
     font-weight: 700;
 }
 
-.sign-up-page {
+.sign-up-page,
+.form-wrapper,
+.form-header,
+.form,
+.col-row,
+.submit {
     display: flex;
     flex-direction: column;
+}
+
+.sign-up-page {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -62,14 +70,6 @@ label {
     width: 75px;
 }
 
-.form-wrapper,
-.form-header,
-.form,
-.col-row {
-    display: flex;
-    flex-direction: column;
-}
-
 .form-header {
     flex: 0.4;
 }
@@ -85,6 +85,7 @@ label {
     font-size: 1.2rem;
     color: white;
     padding: 20px;
+    font-weight: 700;
 }
 
 .form-row {
@@ -111,9 +112,7 @@ input:focus {
 }
 
 .submit {
-    display: flex;
     flex: 0.35;
-    flex-direction: column;
 }
 
 .submit>p {
@@ -191,7 +190,7 @@ input:focus {
         display: flex;
         justify-content: center;
         position: absolute;
-        top: 150px;
+        top: 250px;
         background-color: rgba(0, 0, 0, 0.39);
         width: 100%;
         height: fit-content;
